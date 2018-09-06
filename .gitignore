@@ -1,0 +1,6 @@
+*
+!.gitignore
+!LICENSE
+!*.c
+!*.h
+!*.sh
