@@ -1,10 +1,10 @@
-# OVerblown Hello World
+# Overblown Hello World
 
 ## What's the point of writing an overblown 'Hello World'?
 
 Surprisingly practical, for certain cases.
 
-So let's say you want to make an application, but you're just starting out. At a high level, what does your application look like? Well, if you're like me, your first real code is probably a list of commands all placed inside main().
+So let's say you want to make an application, but you're just starting out. At a high level, what does your application look like? Well, if you're like me, your first real code is probably a list of commands all placed inside main(). This is not the best approach, as it places a lot of pressure on main() to be exactly correct, violates separation of responsibility, and anything added to main() is essentially a kind of global.
 
 So, while the title is "OVerblown Hello World", this is really a very simple example of basic application structure.
 
@@ -22,5 +22,5 @@ It is not a good fit for: Functional programming, pure procedural programming.
 * build.sh is a very simple, one-line gcc build script. It's mostly there for convenience.
 * Functions related to the console go in console.c/h. We don't use printf() directly, as the console (in a real application) may be graphical, 2D, 3D, over a network, audio/voice, brail, or any others I haven't thought of.
 * Data constants goes into data.c/h.
-* hello.c starts and runs the application. In a real application, it should also call application_shutdown(), but there's nothing to shutdown.
+* hello.c starts and runs the application. In a real application, it should also call application_shutdown(), but there's nothing to shutdown, and thus no shutdown function.
 
